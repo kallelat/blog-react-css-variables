@@ -1,0 +1,53 @@
+/* generic padding */
+.app {
+  padding: 2rem;
+}
+
+.poll {
+  margin-bottom: 2rem;
+}
+
+.item {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  position: relative;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.indicator {
+  border-radius: 20px;
+  width: 1rem;
+  height: 1rem;
+  border: 1px solid #333333;
+
+  /* center contents */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.item .indicator span {
+  border-radius: 20px;
+  width: 0.75rem;
+  height: 0.75rem;
+  display: inline-block;
+
+  /* make background-color changes animated */
+  transition: background-color 0.2s;
+}
+
+.item.selected .indicator span {
+  /* selected state marked */
+  background-color: #333333;
+}
+
+.item:hover:not(.selected) .indicator span {
+  /* selected and :hover states create a black dot inside the item indicator */
+  background-color: #cccccc;
+}
+
+.label {
+  margin-left: 0.75rem;
+}
