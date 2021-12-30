@@ -20,7 +20,7 @@
   border-radius: 20px;
   width: 1rem;
   height: 1rem;
-  border: 1px solid #333333;
+  border: 1px solid var(--main-color);
 
   /* center contents */
   display: flex;
@@ -35,17 +35,17 @@
   display: inline-block;
 
   /* make background-color changes animated */
-  transition: background-color 0.2s;
+  transition: background-color var(--transition-delay);
 }
 
 .item.selected .indicator span {
   /* selected state marked */
-  background-color: #333333;
+  background-color: var(--main-color);
 }
 
 .item:hover:not(.selected) .indicator span {
   /* selected and :hover states create a black dot inside the item indicator */
-  background-color: #cccccc;
+  background-color: var(--secondary-color);
 }
 
 .label {

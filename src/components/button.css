@@ -7,21 +7,21 @@ button {
   padding: 1rem 2rem;
 
   /* make transition property animated */
-  transition: box-shadow 0.2s;
+  transition: box-shadow var(--transition-delay);
 
   /* initial styles for normal button */
-  background-color: #333333;
+  background-color: var(--main-color);
   color: #ffffff;
 }
 
 button:hover:not(:disabled),
 button:focus:not(:disabled) {
   /* emphasize :hover and :focus states with box-shadow */
-  box-shadow: 0px 0px 5px #333333;
+  box-shadow: 0px 0px 5px var(--main-color);
 }
 
 button:disabled {
   /* styles for disabled button */
-  background-color: #888888;
+  background-color: var(--disabled-color);
   color: #ffffff;
 }
