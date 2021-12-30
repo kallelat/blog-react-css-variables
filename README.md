@@ -14,7 +14,7 @@ Technologies used:
 
 ## Build initial app
 
-Create initial application (you can replace public/ and src/ folders with files from [initial.zip](initial.zip))
+Create initial application (you can overwrite public/ and src/ folders with folders from [initial.zip](initial.zip))
 
 ## Intro to CSS variables
 
