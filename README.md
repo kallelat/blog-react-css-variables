@@ -9,7 +9,7 @@ Technologies used:
 
 ## Initial setup and configuration
 
-1. Create a new React app with `npm create-react-app . --template typescript`
+1. Create a new React app with `npx create-react-app . --template typescript`
 2. Start dev server using `npm start`
 
 ## Build initial app
